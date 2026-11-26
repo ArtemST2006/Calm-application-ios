@@ -67,8 +67,9 @@ private enum OnboardingPalette {
 
 private enum OnboardingFont {
     static func medium(_ size: CGFloat, relativeTo style: Font.TextStyle) -> Font {
-        // A licensed TT Commons file can be added later. The trial font is not
-        // included because its license does not allow embedding in an iOS app.
+        // The installed Trial face is available for local design inspection only.
+        // A licensed mobile-app font must be registered in the Xcode project
+        // and its actual PostScript name added here before distribution.
         if UIFont(name: "TTCommonsClassicTrl-Md", size: size) != nil {
             return .custom("TTCommonsClassicTrl-Md", size: size, relativeTo: style)
         }
