@@ -3,3 +3,7 @@
 **/xcuserdata/
 **/DerivedData/
 .build/
+backend/data/
+backend/__pycache__/
+backend/tests/__pycache__/
+*.pyc

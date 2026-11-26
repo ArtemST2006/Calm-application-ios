@@ -10,6 +10,8 @@
 		C00000000000000000000002 = {isa = PBXBuildFile; fileRef = B00000000000000000000002; };
 		C00000000000000000000003 = {isa = PBXBuildFile; fileRef = B00000000000000000000003; };
 		C00000000000000000000004 = {isa = PBXBuildFile; fileRef = B00000000000000000000004; };
+		C00000000000000000000006 = {isa = PBXBuildFile; fileRef = B00000000000000000000006; };
+		C00000000000000000000007 = {isa = PBXBuildFile; fileRef = B00000000000000000000007; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +20,8 @@
 		B00000000000000000000003 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEntryView.swift; sourceTree = "<group>"; };
 		B00000000000000000000004 = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B00000000000000000000005 = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalmOnboarding.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B00000000000000000000006 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
+		B00000000000000000000007 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFlowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,7 @@
 		};
 		A00000000000000000000007 = {
 			isa = PBXGroup;
-			children = (B00000000000000000000003);
+			children = (B00000000000000000000003, B00000000000000000000006, B00000000000000000000007);
 			path = Authentication;
 			sourceTree = "<group>";
 		};
@@ -114,7 +118,7 @@
 		D00000000000000000000001 = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
-			files = (C00000000000000000000001, C00000000000000000000002, C00000000000000000000003);
+			files = (C00000000000000000000001, C00000000000000000000002, C00000000000000000000003, C00000000000000000000006, C00000000000000000000007);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
@@ -146,7 +150,8 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = CalmOnboarding/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Calm;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -164,7 +169,8 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "CalmOnboarding/Info-Release.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Calm;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

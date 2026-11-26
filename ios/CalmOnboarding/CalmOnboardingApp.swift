@@ -2,9 +2,15 @@ import SwiftUI
 
 @main
 struct CalmOnboardingApp: App {
+    @AppStorage("hasAuthenticated") private var hasAuthenticated = false
+
     var body: some Scene {
         WindowGroup {
-            OnboardingScreen()
+            if hasAuthenticated && SessionTokenStore.load() != nil {
+                RegisteredHomeView()
+            } else {
+                OnboardingScreen()
+            }
         }
     }
 }

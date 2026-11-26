@@ -97,7 +97,10 @@ struct OnboardingScreen: View {
             .ignoresSafeArea()
             .toolbar(.hidden, for: .navigationBar)
             .navigationDestination(for: AuthRoute.self) { route in
-                AuthEntryView(title: route.title)
+                switch route {
+                case .createAccount: RegistrationFlowView()
+                case .signIn: AuthEntryView(title: route.title)
+                }
             }
         }
         .preferredColorScheme(.light)
